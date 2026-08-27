@@ -9,3 +9,7 @@ The workflow is triggered automatically on every push. It checks out the reposit
 ## Task0
 https://github.com/tomvieilledent/holbertonschool-continuous_integration/actions/runs/32828506096
 
+## Task1
+
+fail:https://github.com/Tomsonne/holbertonschool-continuous_integration/actions/runs/32854326264
+done:https://github.com/Tomsonne/holbertonschool-continuous_integration/actions/runs/32854061950
