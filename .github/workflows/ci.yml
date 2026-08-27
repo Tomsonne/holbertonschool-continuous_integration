@@ -46,3 +46,20 @@ jobs:
 
       - name: Run tests
         run: npm test
+
+  security:
+    needs: [lint, test]
+    if: github.event_name == 'push' 
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Verify deployment secret
+        env:
+          DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+        run: |
+          if [ -z "$DEPLOY_TOKEN" ]; then
+            echo "DEPLOY_TOKEN is missing"
+            exit 1
+          fi
+
+          echo "DEPLOY_TOKEN is set"
