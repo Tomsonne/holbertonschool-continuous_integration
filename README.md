@@ -17,3 +17,13 @@ done:https://github.com/Tomsonne/holbertonschool-continuous_integration/actions/
 ## Task2
 
 https://github.com/Tomsonne/holbertonschool-continuous_integration/actions/runs/33054374410
+
+## Task 3
+
+- [Run before caching](https://github.com/Tomsonne/holbertonschool-continuous_integration/actions/runs/33054284381)
+- [Run with a cache hit](https://github.com/Tomsonne/holbertonschool-continuous_integration/actions/runs/33055298626)
+
+The measured execution time remained nearly unchanged because this project has
+very few dependencies and the NPM cache is only about 2 MB. However, the later
+run reports `Cache hit` and `Cache restored successfully`, proving that the
+dependency cache was successfully reused.
